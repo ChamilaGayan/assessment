@@ -6,11 +6,8 @@
     <title>Assessment</title>
     
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    
-    <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
-
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/css/app.css">
+
 </head>
 <body>
     <div id="app">
@@ -24,8 +21,6 @@
             
             
                 <li class='sidebar-title'>Main Menu</li>
-            
-            
             
                 <li class="sidebar-item active ">
                     <a href="index.php" class='sidebar-link'>
@@ -118,93 +113,93 @@
             
 <div class="main-content container-fluid">
     <div class="page-title">
-        <h3>Dashboard</h3>
-        <p class="text-subtitle text-muted">A good dashboard to display your statistics</p>
+        <h3>Form</h3>
+        <p class="text-subtitle text-muted">Submit your details here</p>
     </div>
     <section class="section">
-        <div class="row mb-2">
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>BALANCE</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>$50 </p>
+       
+    <div class="col-md-10 col-12">
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-content">
+            <div class="card-body">
+            <form>
+                <div class="form-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Name</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group has-icon-left">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="Name" id="user">
+                                    <div class="form-control-icon">
+                                        <i data-feather="user"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="chart-wrapper">
-                                <canvas id="canvas1" style="height:100px !important"></canvas>
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>Revenue</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>$532,2 </p>
+                        <div class="col-md-4">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group has-icon-left">
+                                <div class="position-relative">
+                                    <input type="email" class="form-control" placeholder="Email" id="email">
+                                    <div class="form-control-icon">
+                                        <i data-feather="mail"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="chart-wrapper">
-                                <canvas id="canvas2" style="height:100px !important"></canvas>
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>ORDERS</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>1,544 </p>
+                        <div class="col-md-4">
+                            <label>Mobile</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group has-icon-left">
+                                <div class="position-relative">
+                                    <input type="number" class="form-control" placeholder="Mobile" id="mobile">
+                                    <div class="form-control-icon">
+                                        <i data-feather="phone"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="chart-wrapper">
-                                <canvas id="canvas3" style="height:100px !important"></canvas>
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card card-statistic">
-                    <div class="card-body p-0">
-                        <div class="d-flex flex-column">
-                            <div class='px-3 py-3 d-flex justify-content-between'>
-                                <h3 class='card-title'>Sales Today</h3>
-                                <div class="card-right d-flex align-items-center">
-                                    <p>423 </p>
+                        <div class="col-md-4">
+                            <label>Password</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group has-icon-left">
+                                <div class="position-relative">
+                                    <input type="password" class="form-control" placeholder="Password" id="password">
+                                    <div class="form-control-icon">
+                                        <i data-feather="lock"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="chart-wrapper">
-                                <canvas id="canvas4" style="height:100px !important"></canvas>
-                            </div>
                         </div>
+                  
+                    <div class="col-12 d-flex justify-content-end ">
+                        <button type="submit" name="submit" id="submit" class="btn btn-primary mr-1 mb-1">Submit</button>
+
+                        <button type="reset" class="btn btn-light-secondary mr-1 mb-1">Reset</button>
+                    </div>
                     </div>
                 </div>
+                </form>
             </div>
+            </div>
+        </div>
         </div>
        
     </section>
 </div>
         </div>
     </div>
-    <script src="assets/js/feather-icons/feather.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    
-    <script src="assets/vendors/chartjs/Chart.min.js"></script>
-    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/js/pages/dashboard.js"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

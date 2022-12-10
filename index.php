@@ -7,9 +7,6 @@
     
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     
-    <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
-
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
