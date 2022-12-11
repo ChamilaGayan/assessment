@@ -13,7 +13,9 @@ require_once 'conn.php';
 
   
     if ($insert) {
-      echo "Data Inserted!";
+      // echo "Data Inserted!";
+      print "Message is Saved!";
+      true;
       }else {
         echo "Error!";
       }

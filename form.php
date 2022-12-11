@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 </head>
 <body>
@@ -121,6 +122,9 @@
     <div class="col-md-10 col-12">
         <div class="card">
             <div class="card-header">
+            <p id="status"></p>
+            <p id="success_message"></p>
+        
             </div>
             <div class="card-content">
             <div class="card-body">
@@ -192,13 +196,36 @@
             </div>
         </div>
         </div>
-       
+
+
+
+
+
+
+
+
+<!-- Get Data -->
+<div class = "container" > 
+
+<h3><u>View Data</u></h3>
+
+<p><strong>Click on button to display records from database</strong></p> 
+
+<div id="records"></div> 
+
+<p>
+
+    <input type="button" id = "getusers" value = "View Data" class="btn btn-primary mr-1 mb-1"/>
+</p>
+
+</div> 
+
     </section>
 </div>
         </div>
     </div>
-
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
+   
+<script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
